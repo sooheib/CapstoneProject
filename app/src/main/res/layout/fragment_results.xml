@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CustomMatchParentView"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/CustomMatchParentView"
+        android:id="@+id/swipe_container"
+        android:fitsSystemWindows="true">
+        <GridView
+            style="@style/CustomGridView"
+            android:id="@+id/gridview_shows" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/CustomCenterImageView"
+        android:id="@+id/no_show_data_imageview"
+        android:visibility="invisible"
+        android:src="@drawable/no_data_retrieved"
+        android:contentDescription="@string/no_show_data"/>
+
+</FrameLayout>

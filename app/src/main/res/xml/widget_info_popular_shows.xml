@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:initialKeyguardLayout="@layout/widget_popular_series"
+    android:initialLayout="@layout/widget_popular_series"
+    android:minHeight="@dimen/widget_popular_series_default_height"
+    android:minResizeHeight="@dimen/widget_popular_series_min_resize_height"
+    android:minResizeWidth="@dimen/widget_popular_series_min_resize_width"
+    android:minWidth="@dimen/widget_popular_series_default_width"
+    android:resizeMode="horizontal|vertical"
+    android:previewImage="@drawable/widget_popular_series_preview"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen|keyguard"
+    tools:ignore="UnusedAttribute" />

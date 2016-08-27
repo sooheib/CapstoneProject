@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="about_text_size">14sp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="app_bar_elevation">12dp</dimen>
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_elevation">4dp</dimen>
+    <dimen name="rating_text_size">36sp</dimen>
+    <dimen name="show_details_margin">10dp</dimen>
+    <dimen name="show_details_padding">8dp</dimen>
+    <dimen name="show_cast_margin">15dp</dimen>
+    <dimen name="show_comments_padding">5dp</dimen>
+    <dimen name="show_comments_margin">15dp</dimen>
+    <dimen name="show_seasons_padding">40dp</dimen>
+    <dimen name="show_episodes_padding">60dp</dimen>
+    <dimen name="episode_status_icon_padding">10dp</dimen>
+    <dimen name="show_card_elevation">5dp</dimen>
+
+</resources>
+

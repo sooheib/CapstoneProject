@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomMatchParentView"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:fitsSystemWindows="true"
+    tools:context="com.nanodegree.android.watchthemall.SearchResultsActivity">
+
+    <!-- This layout is a two-pane layout for the Shows master/detail flow.-->
+    <fragment
+        android:id="@+id/shows_container"
+        android:name="com.nanodegree.android.watchthemall.ShowsFragment"
+        android:fitsSystemWindows="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        tools:layout="@layout/fragment_results" />
+
+    <FrameLayout
+        android:id="@+id/detail_container"
+        android:fitsSystemWindows="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+</LinearLayout>

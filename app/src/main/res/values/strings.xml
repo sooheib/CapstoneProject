@@ -1,0 +1,114 @@
+<resources>
+    <!-- General -->
+    <string name="app_name" translatable="false">WatchThemAll</string>
+    <string name="wta_motto" translatable="false">Track your series!</string>
+    <string name="content_authority" translatable="false">com.nanodegree.android.watchthemall</string>
+    <string name="unknown_date">Unknown date</string>
+    <string name="unknown_runtime">Unknown air runtime</string>
+    <string name="unknown_user">Unknown user</string>
+    <string name="unknown_air_info">No air info available</string>
+    <string name="unknown_air_day">Unknown air day</string>
+    <string name="unknown_air_time">Unknown air time</string>
+    <string name="unknown_air_timezone">Unknown air timezone</string>
+    <string name="unknown_title">Unknown title</string>
+    <string name="unknown_overview">No overview available</string>
+    <string name="unknown_network">Unknown air network</string>
+    <string name="unknown_language">Unknown language</string>
+    <string name="unknown_status">Unknown current show status</string>
+
+    <!-- Menus strings -->
+    <string name="navigation_drawer_watchlist_series">My series watchlist</string>
+    <string name="navigation_drawer_watching_series">My watching series</string>
+    <string name="navigation_drawer_watched_series">My watched series</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <!-- Main activity (search screen) -->
+    <string name="search_hint">Introduce your search here&#8230;</string>
+    <string name="empty_search_keywords_error">Please, introduce some keywords to your search</string>
+
+    <!-- Search results screen -->
+    <string name="title_activity_search_results">Shows</string>
+    <string name="title_search_results">Search results</string>
+    <string name="title_watchlist_series">Watchlist</string>
+    <string name="title_watching_series">Watching</string>
+    <string name="title_watched_series">Watched</string>
+
+    <!-- Show details screen -->
+    <string name="title_activity_show_detail">Show Details</string>
+    <string name="overview_label">Overview:</string>
+    <string name="first_aired_label">First aired date:</string>
+    <string name="broadcast_label">Broadcast:</string>
+    <string name="genres_label">Genres:</string>
+    <string name="cast_label">Cast:</string>
+    <string name="votes_label">votes</string>
+    <string name="show_info_tab">INFO</string>
+    <string name="show_seasons_tab">SEASONS</string>
+    <string name="show_comments_tab">COMMENTS</string>
+    <string name="minute_label">min</string>
+    <string name="episodes">episodes</string>
+    <string name="various_characters">Various</string>
+    <string name="empty_comment_list">No comments could be retrieved</string>
+    <string name="empty_genre_list">No genre data retrieved</string>
+
+    <!-- Episode details screen -->
+    <string name="title_activity_episode_detail">Episode Details</string>
+    <string name="episode_info_tab">INFO</string>
+    <string name="episode_comments_tab">COMMENTS</string>
+
+    <!-- Settings screen -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_sort_order_label">Sort show collections by</string>
+    <string name="pref_sort_order_key" translatable="false">show_collections_sort_order</string>
+    <string name="pref_sort_order_title_label">Title</string>
+    <string name="pref_sort_order_rating_label">Highest rated</string>
+    <string name="pref_sort_order_title" translatable="false">title.asc</string>
+    <string name="pref_sort_order_rating" translatable="false">rating.desc</string>
+
+    <!-- About screen -->
+    <string name="title_activity_about">WTA. About</string>
+    <string name="about_text">
+        WatchThemAll is a series tracker app. Nowadays there are quite a lot of options regarding
+        TV series, and sometimes it may be difficult to decide which series to watch and to be sure
+        of not forgetting any episode of our favorite shows.\n\n
+        This application aims to make all of that more easy to the user, at the same time that
+        makes the hobby of watching and following TV series something much more enjoyable
+        and funny.\n\n
+        WTA is intended to TV series lovers, specially to those people who want to keep track
+        of their favorite shows, to stay always updated and to know about new series to watch.\n\n
+        All shows data is acquired from trakt.tv (https://trakt.tv/) API.\n\n
+        To report any bugs or suggestions do not hesitate to send a mail to
+        david.duque.f@gmail.com
+    </string>
+
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type" translatable="false">watchthemall.android.nanodegree</string>
+
+    <!-- Content descriptions -->
+    <string name="show_poster">Show poster</string>
+    <string name="wta_logo">WatchThemAll logo</string>
+    <string name="search">Search</string>
+    <string name="no_show_data">No show data available</string>
+    <string name="show_banner">Show banner</string>
+    <string name="show_actions">Show actions</string>
+    <string name="watching_item">Watching</string>
+    <string name="watched_item">Watched</string>
+    <string name="watchlist_item">Watchlist</string>
+    <string name="episode_status">Episode status</string>
+    <string name="episode_actions">Episode actions</string>
+    <string name="episode_screenshot">Episode screenshot</string>
+
+    <!-- Widgets related strings -->
+    <string name="title_widget_popular_shows">WTA Popular Shows</string>
+    <string name="no_info_available">No shows data available</string>
+
+    <!-- Google Ads -->
+    <string name="banner_ad_unit_id" translatable="false">
+        ca-app-pub-3940256099942544/6300978111
+    </string>
+
+    <!-- Other strings -->
+    <string name="sdf_format">yyyy-MM-dd</string>
+    <string name="sdf_with_hour_format">yyyy-MM-dd HH:mm:ss</string>
+
+</resources>

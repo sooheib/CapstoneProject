@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomMatchParentView"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/CustomRootLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/CustomWrapContentView"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/CustomLargeBoldTextView"
+                android:id="@+id/episodeRating"
+                android:layout_marginEnd="@dimen/show_details_margin"
+                android:textSize="@dimen/rating_text_size"
+                tools:text="9.8"/>
+
+            <TextView
+                style="@style/CustomSmallTextView"
+                android:id="@+id/episodeVoteCount"
+                android:layout_gravity="center_vertical"
+                tools:text="(1000 votes)"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/CustomMediumBoldTextView"
+            android:id="@+id/episodeFirstAiredLabel"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/show_details_margin"
+            android:text="@string/first_aired_label"/>
+
+        <TextView
+            style="@style/CustomSmallTextView"
+            android:id="@+id/episodeFirstAired"
+            android:layout_width="match_parent"
+            tools:text="12/12/2006"/>
+
+        <TextView
+            style="@style/CustomMediumBoldTextView"
+            android:id="@+id/episodeOverviewLabel"
+            android:layout_marginTop="@dimen/show_details_margin"
+            android:text="@string/overview_label"/>
+
+        <WebView
+            style="@style/CustomWrapContentView"
+            android:id="@+id/episodeOverview" />
+    </LinearLayout>
+</ScrollView>

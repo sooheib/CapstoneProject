@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application themes -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryLighter</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.ActionBar" parent="AppTheme">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="AppTheme.TwoPane" parent="AppTheme.ActionBar">
+    </style>
+
+    <style name="CustomWrapContentView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CustomMatchParentView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="CustomRootLayout" parent="CustomMatchParentView">
+        <item name="android:paddingStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="CustomGridView" parent="CustomMatchParentView">
+        <item name="android:columnWidth">90dp</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:verticalSpacing">2dp</item>
+        <item name="android:horizontalSpacing">2dp</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CustomImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CustomCenterImageView" parent="CustomMatchParentView">
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="CustomMediumTextView" parent="CustomWrapContentView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/wtaGray</item>
+    </style>
+
+    <style name="CustomSmallTextView" parent="CustomWrapContentView">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/wtaGray</item>
+    </style>
+
+    <style name="CustomLargeTextView" parent="CustomWrapContentView">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CustomMediumItalicTextView" parent="CustomMediumTextView">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="CustomMediumBoldTextView" parent="CustomMediumTextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CustomSmallItalicTextView" parent="CustomSmallTextView">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="CustomLargeBoldTextView" parent="CustomLargeTextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomLargeItalicTextView" parent="CustomLargeTextView">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>

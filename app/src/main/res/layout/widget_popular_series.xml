@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:id="@+id/widget"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+        <ImageView
+            style="@style/CustomWrapContentView"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="start"
+            android:padding="@dimen/widget_popular_series_icon_padding"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/widget_title"
+            style="@style/CustomLargeTextView"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:src="@string/title_widget_popular_shows"/>
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/CustomMatchParentView"
+        android:background="@color/colorPrimaryLighter">
+        <ListView
+            android:id="@+id/widget_list"
+            style="@style/CustomMatchParentView"
+            android:divider="@color/wtaGray"
+            android:dividerHeight="@dimen/widget_divider_height"
+            tools:listitem="@layout/widget_popular_series_item"/>
+        <TextView
+            android:id="@+id/widget_empty"
+            style="@style/CustomLargeItalicTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/wtaGray"
+            android:text="@string/no_info_available"/>
+    </FrameLayout>
+</LinearLayout>

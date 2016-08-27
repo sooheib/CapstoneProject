@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_margin">0dp</dimen>
+    <!-- Popular Series Widget -->
+    <dimen name="widget_popular_series_default_width">280dp</dimen>
+    <dimen name="widget_popular_series_default_height">220dp</dimen>
+    <dimen name="widget_popular_series_min_resize_width">220dp</dimen>
+    <dimen name="widget_popular_series_min_resize_height">180dp</dimen>
+    <dimen name="widget_popular_series_icon_padding">2dp</dimen>
+    <dimen name="widget_popular_series_item_padding">10dp</dimen>
+    <dimen name="widget_popular_series_title_padding">20dp</dimen>
+    <dimen name="widget_divider_height">0.5dp</dimen>
+</resources>

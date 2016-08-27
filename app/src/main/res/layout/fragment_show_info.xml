@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomMatchParentView"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/CustomRootLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/showPoster"
+                android:focusable="true"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/show_details_margin"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/show_poster"
+                tools:src="@drawable/no_show_poster" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CustomMediumItalicTextView"
+                    android:focusable="true"
+                    android:id="@+id/showStatus"
+                    android:layout_width="match_parent"
+                    tools:text="On course"/>
+
+                <TextView
+                    style="@style/CustomLargeBoldTextView"
+                    android:focusable="true"
+                    android:id="@+id/showRating"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/rating_text_size"
+                    tools:text="9.8"/>
+
+                <TextView
+                    style="@style/CustomSmallTextView"
+                    android:focusable="true"
+                    android:id="@+id/showVoteCount"
+                    android:layout_width="match_parent"
+                    tools:text="(1000 votes)"/>
+
+                <TextView
+                    style="@style/CustomMediumBoldTextView"
+                    android:focusable="true"
+                    android:id="@+id/showFirstAiredLabel"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/show_details_margin"
+                    android:text="@string/first_aired_label"/>
+
+                <TextView
+                    style="@style/CustomSmallTextView"
+                    android:focusable="true"
+                    android:id="@+id/showFirstAired"
+                    android:layout_width="match_parent"
+                    tools:text="12/12/2006"/>
+
+                <TextView
+                    style="@style/CustomMediumBoldTextView"
+                    android:focusable="true"
+                    android:id="@+id/showGenresLabel"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/show_details_margin"
+                    android:text="@string/genres_label"/>
+
+                <TextView
+                    style="@style/CustomSmallTextView"
+                    android:focusable="true"
+                    android:id="@+id/showGenres"
+                    android:layout_width="match_parent"
+                    tools:text="Sci-Fi, Terror, Drama, Comedy, Adventures, Cartoons"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomMediumBoldTextView"
+                android:id="@+id/showStatusLabel"
+                android:layout_marginTop="@dimen/show_details_margin"
+                android:text="@string/broadcast_label"/>
+
+            <TextView
+                style="@style/CustomSmallTextView"
+                android:id="@+id/showAirsDay"
+                android:paddingStart="@dimen/show_details_padding"
+                tools:text="Sunday, 20:00"/>
+
+            <TextView
+                style="@style/CustomSmallTextView"
+                android:id="@+id/showNetworkCountry"
+                android:paddingStart="@dimen/show_details_padding"
+                tools:text="FOX (USA)"/>
+
+            <TextView
+                style="@style/CustomSmallTextView"
+                android:id="@+id/showRuntime"
+                android:paddingStart="@dimen/show_details_padding"
+                tools:text="40 min"/>
+
+            <TextView
+                style="@style/CustomMediumBoldTextView"
+                android:id="@+id/showOverviewLabel"
+                android:layout_marginTop="@dimen/show_details_margin"
+                android:text="@string/overview_label"/>
+
+            <WebView
+                style="@style/CustomWrapContentView"
+                android:id="@+id/showOverview" />
+
+            <TextView
+                style="@style/CustomMediumBoldTextView"
+                android:id="@+id/showCastLabel"
+                android:layout_marginTop="@dimen/show_details_margin"
+                android:text="@string/cast_label"/>
+
+            <com.nanodegree.android.watchthemall.components.NonScrollListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showCastList" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_item_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:elevation="@dimen/show_card_elevation"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryLight">
+
+        <ImageView
+            style="@style/CustomImageView"
+            android:id="@+id/grid_item_show_poster"
+            android:contentDescription="@string/show_poster" />
+
+        <TextView
+            android:id="@+id/grid_item_show_title"
+            style="@style/CustomSmallTextView"
+            android:ellipsize="end"
+            android:lines="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="Title" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

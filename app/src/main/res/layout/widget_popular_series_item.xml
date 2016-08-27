@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/widget_popular_series_item_padding"
+    android:paddingBottom="@dimen/widget_popular_series_item_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingEnd="@dimen/abc_list_item_padding_horizontal_material"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/widget_show_thumb"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/show_poster"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            style="@style/CustomSmallTextView"
+            android:id="@+id/widget_show_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/widget_popular_series_title_padding"
+            tools:text="Título de la serie"/>
+
+        <TextView
+            style="@style/CustomSmallItalicTextView"
+            android:id="@+id/widget_show_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            tools:text="(2016)"/>
+
+    </LinearLayout>
+</FrameLayout>

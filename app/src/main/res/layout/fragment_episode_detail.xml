@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomMatchParentView"
+    android:id="@+id/episode_detail_root"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/episode_detail_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/app_bar_elevation"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/episode_detail_collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                style="@style/CustomMatchParentView"
+                android:id="@+id/episode_detail_banner_container"
+                android:background="@color/colorPrimary"
+                app:layout_collapseMode="parallax"
+                android:fitsSystemWindows="true">
+                <View
+                    style="@style/CustomMatchParentView"
+                    android:background="@drawable/photo_background_protection" />
+
+                <ImageView
+                    style="@style/CustomMatchParentView"
+                    android:id="@+id/episode_screenshot"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    tools:src="@drawable/no_show_poster"
+                    android:contentDescription="@string/episode_screenshot"/>
+
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/episode_detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/episode_detail_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="bottom"
+                app:tabBackground="@color/colorPrimaryDark"
+                app:tabTextColor="@color/colorPrimaryLight"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabMaxWidth="0dp" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        style="@style/CustomMatchParentView"
+        android:id="@+id/episode_detail_viewpager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        style="@style/CustomWrapContentView"
+        android:id="@+id/episode_detail_fab_menu"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:elevation="@dimen/fab_elevation"
+        android:contentDescription="@string/episode_actions"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/ic_add"
+        app:layout_collapseMode="pin"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="@color/colorAccent">
+
+        <com.github.clans.fab.FloatingActionButton
+            style="@style/CustomWrapContentView"
+            android:id="@+id/episode_detail_menu_watched_item"
+            app:layout_collapseMode="pin"
+            app:fab_size="mini"
+            android:src="@drawable/ic_watched"
+            android:elevation="@dimen/fab_elevation"
+            android:contentDescription="@string/watched_item" />
+
+        <com.github.clans.fab.FloatingActionButton
+            style="@style/CustomWrapContentView"
+            android:id="@+id/episode_detail_menu_watchlist_item"
+            app:layout_collapseMode="pin"
+            app:fab_size="mini"
+            android:src="@drawable/ic_watchlist"
+            android:elevation="@dimen/fab_elevation"
+            android:contentDescription="@string/watchlist_item" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

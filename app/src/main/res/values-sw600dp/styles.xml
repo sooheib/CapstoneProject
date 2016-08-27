@@ -1,0 +1,19 @@
+<resources>
+    <style name="AppTheme.TwoPane" parent="AppTheme">
+    </style>
+
+    <style name="CustomGridView" parent="CustomMatchParentView">
+        <item name="android:columnWidth">150dp</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:verticalSpacing">2dp</item>
+        <item name="android:horizontalSpacing">2dp</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:gravity">center</item>
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+    <style name="CustomImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+</resources>

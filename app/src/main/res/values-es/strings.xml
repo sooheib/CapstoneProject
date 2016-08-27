@@ -1,0 +1,97 @@
+<resources>
+    <!-- Menus strings -->
+    <string name="action_settings">Ajustes</string>
+
+    <!-- Main activity (search screen) -->
+    <string name="search_hint">Introduce tu búsqueda aquí&#8230;</string>
+    <string name="empty_search_keywords_error">Por favor, introduce algún término de búsqueda</string>
+    <string name="navigation_drawer_watchlist_series">Mi watchlist de series</string>
+    <string name="navigation_drawer_watching_series">Mis series en curso</string>
+    <string name="navigation_drawer_watched_series">Mis series vistas</string>
+    <string name="unknown_date">Fecha desconocida</string>
+    <string name="unknown_runtime">Duración desconocida</string>
+    <string name="unknown_user">Usuario desconocido</string>
+    <string name="unknown_air_info">Sin información de emisión disponible</string>
+    <string name="unknown_air_day">Día desconocido</string>
+    <string name="unknown_air_time">Hora desconocida</string>
+    <string name="unknown_air_timezone">Zona horaria desconocida</string>
+    <string name="unknown_title">Título desconocido</string>
+    <string name="unknown_overview">Sin sinopsis disponible</string>
+    <string name="unknown_network">Canal desconocido</string>
+    <string name="unknown_language">Lenguaje desconocido</string>
+    <string name="unknown_status">Estado actual de la serie desconocido</string>
+
+    <!-- Search results screen -->
+    <string name="title_activity_search_results">Series</string>
+    <string name="title_search_results">Resultados de la búsqueda</string>
+    <string name="title_watchlist_series">Watchlist</string>
+    <string name="title_watching_series">Viendo</string>
+    <string name="title_watched_series">Vistas</string>
+
+    <!-- Show details screen -->
+    <string name="title_activity_show_detail">Detalles de la serie</string>
+    <string name="overview_label">Sinopsis:</string>
+    <string name="first_aired_label">Fecha de estreno:</string>
+    <string name="broadcast_label">Emisión:</string>
+    <string name="genres_label">Géneros:</string>
+    <string name="cast_label">Reparto:</string>
+    <string name="votes_label">votos</string>
+    <string name="show_info_tab">INFO</string>
+    <string name="show_seasons_tab">TEMPORADAS</string>
+    <string name="show_comments_tab">COMENTARIOS</string>
+    <string name="minute_label">min</string>
+    <string name="episodes">episodios</string>
+    <string name="various_characters">Varios</string>
+    <string name="empty_comment_list">No se ha podido recuperar ningún comentario</string>
+    <string name="empty_genre_list">Ningún género recuperado</string>
+
+    <!-- Episode details screen -->
+    <string name="title_activity_episode_detail">Detalles del episodio</string>
+    <string name="episode_info_tab">INFO</string>
+    <string name="episode_comments_tab">COMENTARIOS</string>
+    <!-- Settings screen -->
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="pref_sort_order_label">Ordenar colecciones de series por</string>
+    <string name="pref_sort_order_title_label">Título</string>
+    <string name="pref_sort_order_rating_label">Mejor puntuadas</string>
+
+    <!-- About screen -->
+    <string name="title_activity_about">WTA. Acerca de</string>
+    <string name="action_about">Acerca de</string>
+    <string name="about_text">
+        WatchThemAll es una aplicación de seguimiento de series de TV. Hoy en día hay muchas
+        opciones en lo relativo a las series de televisión, y a veces puede resultar difícil
+        decidir qué series ver y estar seguro de no perderse ningún episodio de nuestras series
+        favoritas.\n\n
+        Esta aplicación pretende facilitar todo eso, al mismo tiempo que hace del hobby de ver y
+        seguir series de televisión algo mucho más divertido.\n\n
+        WTA está dirigida a los amantes de las series, especialmente aquellos que quieran estar al
+        tanto acerca de sus series favoritas, permanecer siempre al día y descubrir nuevas series
+        que ver.\n\n
+        Todos los datos de las series se obtienen de la API de trakt.tv (https://trakt.tv/).\n\n
+        Para reportar bugs o sugerencias, por favor, envíe un mail a david.duque.f@gmail.com\n\n
+    </string>
+
+    <!-- Content descriptions -->
+    <string name="show_poster">Cartel de la serie</string>
+    <string name="wta_logo">Logo de WatchThemAll</string>
+    <string name="search">Buscar</string>
+    <string name="no_show_data">Sin datos de series disponibles</string>
+    <string name="show_banner">Banner de la serie</string>
+    <string name="show_actions">Acciones sobre la serie</string>
+    <string name="watching_item">Viendo</string>
+    <string name="watched_item">Visto</string>
+    <string name="watchlist_item">Watchlist</string>
+    <string name="episode_status">Estado del episodio</string>
+    <string name="episode_actions">Acciones sobre el episodio</string>
+    <string name="episode_screenshot">Fotograma del capítulo</string>
+
+    <!-- Widgets related strings -->
+    <string name="title_widget_popular_shows">WTA Series Populares</string>
+    <string name="no_info_available">No hay datos de series disponibles</string>
+
+    <!-- Other strings -->
+    <string name="sdf_format">dd-MM-yyyy</string>
+    <string name="sdf_with_hour_format">dd-MM-yyyy HH:mm:ss</string>
+
+</resources>

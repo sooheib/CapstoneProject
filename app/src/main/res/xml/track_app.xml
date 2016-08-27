@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">UA-78277967-1</string>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <screenName name="com.nanodegree.android.watchthemall.MainActivity">
+        Search screen
+    </screenName>
+    <screenName name="com.nanodegree.android.watchthemall.SearchResultsActivity">
+        Search results screen
+    </screenName>
+    <screenName name="com.nanodegree.android.watchthemall.ShowDetailActivity">
+        Show detail screen
+    </screenName>
+    <screenName name="com.nanodegree.android.watchthemall.EpisodeDetailActivity">
+        Episode detail screen
+    </screenName>
+    <screenName name="com.nanodegree.android.watchthemall.SettingsActivity">
+        Settings screen
+    </screenName>
+    <screenName name="com.nanodegree.android.watchthemall.AboutActivity">
+        About screen
+    </screenName>
+</resources>

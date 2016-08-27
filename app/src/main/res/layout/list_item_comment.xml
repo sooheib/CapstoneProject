@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomMatchParentView"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical">
+        <LinearLayout
+            style="@style/CustomWrapContentView"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/show_comments_padding">
+                <TextView
+                    style="@style/CustomMediumTextView"
+                    android:id="@+id/list_item_comment_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/show_comments_margin"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:text="Username" />
+                <TextView
+                    style="@style/CustomMediumItalicTextView"
+                    android:id="@+id/list_item_comment_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    tools:text="26/07/2015 12:00" />
+        </LinearLayout>
+        <TextView
+            style="@style/CustomSmallTextView"
+            android:id="@+id/list_item_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/show_comments_padding"
+            android:paddingBottom="@dimen/show_comments_padding"
+            tools:text="Comment content text ..."/>
+</LinearLayout>
